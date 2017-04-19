@@ -7,17 +7,13 @@ import java.util.Scanner;
 public class PersonScanner {
     private DoublyLinkedList<Person> peopleList;
     
-    public PersonScanner() {
-        peopleList = new DoublyLinkedList<Person>();
-    }
-    
     public PersonScanner(String fileName) throws FileNotFoundException {
-        this();
+        peopleList = new DoublyLinkedList<Person>();
         this.scanPeople(fileName);
     }
     
-    public void scanPeople(String fileName) throws FileNotFoundException {
-        Scanner scan = new Scanner(new File(fileName));
+    public void scanPeople(String data) throws FileNotFoundException {
+        Scanner scan = new Scanner(new File("MusicSurveyData.csv"));
         scan.useDelimiter(",");
         while (scan.hasNext()) {
             System.out.println(scan.next());
