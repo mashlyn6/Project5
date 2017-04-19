@@ -58,17 +58,17 @@ public class RegionTracker {
         return outsideTheUSLiked / outside;
     }
     
-    public int getPercentage(HobbyEnum, String) {
+    public int getPercentage(int songIndex) {
         for (int x = 0; x < list.getSize(), x++)
         {
             if (list.getEntry(x).getRegion() == Northeast)
             {
-                if (list.getEntry(x).getHeard(x).equals("yes"))
+                if (list.getEntry(x).getHeard(songIndex).equals("yes"))
                 {
                     northeastUSHeard++;
                     northeast++;
                 }
-                if (list.getEntry(x).getLiked(x).equals("yes"))
+                if (list.getEntry(x).getLiked(songIndex).equals("yes"))
                 {
                     northeastUSLiked++;
                     northeast++;
@@ -76,12 +76,12 @@ public class RegionTracker {
             }
             if (list.getEntry(x).getRegion() == Southeast)
             {
-                if (list.getEntry(x).getHeard(x).equals("yes"))
+                if (list.getEntry(x).getHeard(songIndex).equals("yes"))
                 {
                     southeastUSHeard++;
                     southeast++;
                 }
-                if (list.getEntry(x).getLiked(x).equals("yes"))
+                if (list.getEntry(x).getLiked(songIndex).equals("yes"))
                 {
                     southeastUSLiked++;
                     southeast++;
@@ -89,12 +89,12 @@ public class RegionTracker {
             }
             if (list.getEntry(x).getRegion() == theRestOfUS)
             {
-                if (list.getEntry(x).getHeard(x).equals("yes"))
+                if (list.getEntry(x).getHeard(songIndex).equals("yes"))
                 {
                     theRestOfUSHeard++;
                     theRest;
                 }
-                if (list.getEntry(x).getLiked(x).equals("yes"))
+                if (list.getEntry(x).getLiked(songIndex).equals("yes"))
                 {
                     theRestOfUSLiked++;
                     theRest;
@@ -102,12 +102,12 @@ public class RegionTracker {
             }
             if (list.getEntry(x).getRegion() == outsideTheUS)
             {
-                if (list.getEntry(x).getHeard(x).equals("yes"))
+                if (list.getEntry(x).getHeard(songIndex).equals("yes"))
                 {
                     outsideTheUSHeard++;
                     outside++;
                 }
-                if (list.getEntry(x).getLiked(x).equals("yes"))
+                if (list.getEntry(x).getLiked(songIndex).equals("yes"))
                 {
                     outsideTheUSLiked++;
                     outside++;
