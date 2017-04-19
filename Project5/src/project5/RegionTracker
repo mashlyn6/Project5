@@ -63,12 +63,12 @@ public class RegionTracker {
         {
             if (list.getEntry(x).getRegion() == Northeast)
             {
-                if (list.getEntry(x).getHeard().equals("yes"))
+                if (list.getEntry(x).getHeard(x).equals("yes"))
                 {
                     northeastUSHeard++;
                     northeast++;
                 }
-                if (list.getEntry(x).getLiked().equals("yes"))
+                if (list.getEntry(x).getLiked(x).equals("yes"))
                 {
                     northeastUSLiked++;
                     northeast++;
@@ -76,12 +76,12 @@ public class RegionTracker {
             }
             if (list.getEntry(x).getRegion() == Southeast)
             {
-                if (list.getEntry(x).getHeard().equals("yes"))
+                if (list.getEntry(x).getHeard(x).equals("yes"))
                 {
                     southeastUSHeard++;
                     southeast++;
                 }
-                if (list.getEntry(x).getLiked().equals("yes"))
+                if (list.getEntry(x).getLiked(x).equals("yes"))
                 {
                     southeastUSLiked++;
                     southeast++;
@@ -89,12 +89,12 @@ public class RegionTracker {
             }
             if (list.getEntry(x).getRegion() == theRestOfUS)
             {
-                if (list.getEntry(x).getHeard().equals("yes"))
+                if (list.getEntry(x).getHeard(x).equals("yes"))
                 {
                     theRestOfUSHeard++;
                     theRest;
                 }
-                if (list.getEntry(x).getLiked().equals("yes"))
+                if (list.getEntry(x).getLiked(x).equals("yes"))
                 {
                     theRestOfUSLiked++;
                     theRest;
@@ -102,12 +102,12 @@ public class RegionTracker {
             }
             if (list.getEntry(x).getRegion() == outsideTheUS)
             {
-                if (list.getEntry(x).getHeard().equals("yes"))
+                if (list.getEntry(x).getHeard(x).equals("yes"))
                 {
                     outsideTheUSHeard++;
                     outside++;
                 }
-                if (list.getEntry(x).getLiked().equals("yes"))
+                if (list.getEntry(x).getLiked(x).equals("yes"))
                 {
                     outsideTheUSLiked++;
                     outside++;
