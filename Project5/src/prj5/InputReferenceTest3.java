@@ -30,8 +30,8 @@ public class InputReferenceTest3 extends student.TestCase {
      */
     @Hint("main working properly with MusicSurveyDataTest2, SongListTest2")
     public void testMain2() {
-        /*Input.main(new String[] { "MusicSurveyDataTest2.csv",
-            "SongListTest2.csv" });*/
+        Input.main(new String[] { "MusicSurveyDataTest2.csv",
+            "SongListTest2.csv" });
 
         fileName = "Output2TitleGenreHobby.txt";
 
@@ -72,8 +72,8 @@ public class InputReferenceTest3 extends student.TestCase {
     public void testMain1() {
 
         // Notice need to pass in an array of the parameters
-        /*Input.main(new String[] { "MusicSurveyDataTest1.csv",
-            "SongListTest1.csv" });*/
+        Input.main(new String[] { "MusicSurveyDataTest1.csv",
+            "SongListTest1.csv" });
 
         fileName = "Output1TitleGenreHobby.txt";
         String output1TitleGenreHobby = "";
@@ -109,8 +109,8 @@ public class InputReferenceTest3 extends student.TestCase {
             "MusicSurveyDataNoGenreRepeats.csv and SongLisNoGenreRepeats.csv")
     public void testMain3() {
 
-        /*Input.main(new String[] { "MusicSurveyDataNoGenreRepeats.csv", 
-                "SongListNoGenreRepeats.csv" });*/
+        Input.main(new String[] { "MusicSurveyDataNoGenreRepeats.csv", 
+                "SongListNoGenreRepeats.csv" });
 
         fileName = "Output3TitleGenreHobby.txt";
 
