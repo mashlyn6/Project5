@@ -16,16 +16,103 @@ public class RegionTracker {
     private int theRestOfUSLiked;
     private int outsideTheUSHeard;
     private int outsideTheUSLiked;
-    private int totalNortheastUS;
-    private int totalSoutheastUS;
-    private int totalTheRestOfUs;
-    private int totalOutsideTheUS;
-
-    public RegionTracker(SinglyLinkedList<Person>) {
-        
+    private int northeast;
+    private int southeast;
+    private int theRest;
+    private int outside;
+    private DoublyLinkedList<Person> list;
+    
+    public RegionTracker(DoublyLinkedList<Person> list1) {
+        list = list1;
     }
     
-    public int getPercentage(RegionEnum, String) {
+    public double northeastPercentageH() {
+        return northeastUSHeard / northeast;
+    }
     
+    public double northeastPercentageL() {
+        return northeastUSLiked / northeast;
+    }
+    
+    public double southeastPercentageH() {
+        return southeastUSHeard / southeast;
+    }
+    
+    public double southeastPercentageL() {
+        return southeastUSLiked / southeast;
+    }
+    
+    public double theRestPercentageH() {
+        return theRestOfUSHeard / theRest;
+    }
+    
+    public double theRestPercentageL() {
+        return theRestOfUSLiked / theRest;
+    }
+    
+    public double outsidePercentageH() {
+        return outsideTheUSHeard / outside;
+    }
+    
+    public double outsidePercentageL() {
+        return outsideTheUSLiked / outside;
+    }
+    
+    public int getPercentage(HobbyEnum, String) {
+        for (int x = 0; x < list.getSize(), x++)
+        {
+            if (list.getEntry(x).getRegion() == Northeast)
+            {
+                if (list.getEntry(x).getHeard().equals("yes"))
+                {
+                    northeastUSHeard++;
+                    northeast++;
+                }
+                if (list.getEntry(x).getLiked().equals("yes"))
+                {
+                    northeastUSLiked++;
+                    northeast++;
+                }
+            }
+            if (list.getEntry(x).getRegion() == Southeast)
+            {
+                if (list.getEntry(x).getHeard().equals("yes"))
+                {
+                    southeastUSHeard++;
+                    southeast++;
+                }
+                if (list.getEntry(x).getLiked().equals("yes"))
+                {
+                    southeastUSLiked++;
+                    southeast++;
+                }
+            }
+            if (list.getEntry(x).getRegion() == theRestOfUS)
+            {
+                if (list.getEntry(x).getHeard().equals("yes"))
+                {
+                    theRestOfUSHeard++;
+                    theRest;
+                }
+                if (list.getEntry(x).getLiked().equals("yes"))
+                {
+                    theRestOfUSLiked++;
+                    theRest;
+                }
+            }
+            if (list.getEntry(x).getRegion() == outsideTheUS)
+            {
+                if (list.getEntry(x).getHeard().equals("yes"))
+                {
+                    outsideTheUSHeard++;
+                    outside++;
+                }
+                if (list.getEntry(x).getLiked().equals("yes"))
+                {
+                    outsideTheUSLiked++;
+                    outside++;
+                }
+            }
+        }
     }
 }
