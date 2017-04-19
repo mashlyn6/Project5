@@ -16,14 +16,6 @@ public class HobbyTracker {
     private int sportsLiked;
     private int musicHeard;
     private int musicLiked;
-    private int readHeardP;
-    private int readLikedP;
-    private int artHeardP;
-    private int artLikedP;
-    private int sportsHeardP;
-    private int sportsLikedP;
-    private int musicHeardP;
-    private int musicLikedP;
     private int read = ;
     private int art = 0;
     private int sports = 0;
